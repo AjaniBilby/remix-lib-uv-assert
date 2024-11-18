@@ -1,0 +1,13 @@
+/.cache
+/.github
+/.vscode
+/build
+/docs
+/node_modules
+/prisma
+/public
+/public/build
+
+.DS_Store
+.env
+*.log
