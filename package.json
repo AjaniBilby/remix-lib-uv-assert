@@ -9,6 +9,8 @@
 		"dev": "node ./server.js",
 		"validate": "run-s validate:*",
 		"validate:typecheck": "tsc",
+		"fuzz:all": "openapi-fuzzer run -s ./openapi.json -u http://localhost:3000/ -i 400 -i 401 -i 403 -i 405 -i 404",
+		"fuzz:resend": "openapi-fuzzer resend -u http://localhost:3000/",
 		"start": "cross-env NODE_ENV=production node ./server.js"
 	},
 	"dependencies": {

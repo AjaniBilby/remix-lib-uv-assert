@@ -28,7 +28,13 @@ const build = viteDevServer
 			)
 	: await import("./build/server/index.js");
 
-app.all("*", createRequestHandler({ build }));
+
+const handler = createRequestHandler({ build })
+app.all("*", (req, res) => {
+	console.log(34);
+	process.stdout.write('Hello\n');
+	handler(req, res);
+});
 
 const server = app.listen(3000, () => {
 	console.log("App listening on http://localhost:3000");

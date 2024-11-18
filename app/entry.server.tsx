@@ -38,7 +38,6 @@ function handleBrowserRequest(
 	remixContext: EntryContext
 ) {
 	responseHeaders.set("Upgrade-Insecure-Requests", "1");
-	console.log(42);
 
 	return new Promise((resolve, reject) => {
 		let shellRendered = false;
