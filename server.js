@@ -14,6 +14,11 @@ const viteDevServer =
 
 const app = express();
 
+// app.use((req, res, next) => {
+// 	console.log("Request received");
+// 	next();
+// });
+
 // Remove this use and the fault stops
 app.use(
 	viteDevServer
