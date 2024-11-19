@@ -16,6 +16,3 @@ COMMIT
 public/entry.worker.js
 
 # fuzz testing
-openapi.json
-openapi-fuzzer.regressions
-results/*

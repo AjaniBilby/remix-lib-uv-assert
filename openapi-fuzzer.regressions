@@ -1,0 +1,8 @@
+# Seeds for failure cases proptest has generated in the past. It is
+# automatically read and these particular cases re-run before any
+# novel cases are generated.
+#
+# It is recommended to check this file in to source control so that
+# everyone who runs the test benefits from these saved cases.
+cc ffa16b54d9947c32dd6780493ae3f0299a4e6bb779d667b29cb0151cb538e818 # shrinks to Payload { query_params: QueryParams([]), path_params: PathParams([("orderID", "a")]), headers: Headers([("API-KEY", "0")]), body: OptionalJSON(Some(Object {"reason": String("")})) }
+cc 2d39932eab46900a9cc91b06495857eb2bc2baa8e4085c51008489ef4e8923c2 # shrinks to Payload { query_params: QueryParams([]), path_params: PathParams([("repairID", "ߎ�C�‗𑄼ぶ'")]), headers: Headers([("API-KEY", "`ue\t\tc':/\t\tLa/\t\t*mRE%")]), body: OptionalJSON(None) }
