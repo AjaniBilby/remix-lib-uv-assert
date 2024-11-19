@@ -29,7 +29,7 @@ const bytes = dump
 	);
 const packet = Buffer.from(bytes);
 
-console.log(bytes)
+console.log(packet.toString())
 
 const options = {
   host: '127.0.0.1', // Target server IP
